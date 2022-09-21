@@ -1,0 +1,31 @@
+
+
+
+
+@media (min-width: 1025px) {
+	
+		.whb-general-header-inner {
+		height: 90px;
+		max-height: 90px;
+	}
+
+		.whb-sticked .whb-general-header-inner {
+		height: 60px;
+		max-height: 60px;
+	}
+		
+	
+	
+	}
+
+@media (max-width: 1024px) {
+	
+		.whb-general-header-inner {
+		height: 60px;
+		max-height: 60px;
+	}
+	
+	
+	
+	}
+		
