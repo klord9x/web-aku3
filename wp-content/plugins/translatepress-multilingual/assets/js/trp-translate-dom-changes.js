@@ -2,7 +2,7 @@
 /**
  * Script to replace dynamically added strings with their translation.
  */
-function 
+var myFunction = function 
 (){
 
     this.is_editor = false;
