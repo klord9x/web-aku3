@@ -2,8 +2,7 @@
 /**
  * Script to replace dynamically added strings with their translation.
  */
-var myFunction = function 
-(){
+function TRP_Translator(){
 
     this.is_editor = false;
     var _this = this;
@@ -601,20 +600,6 @@ function trp_get_IE_version() {
 }
 
 function trp_allow_detect_dom_changes_to_run(){
-    var normal = "Roboto";
-    if (!jQuery("body").css("font-family").includes(normal)) {
-        jQuery("body").css("font-family", normal + "," + jQuery("body").css("font-family"));
-    } else {
-        jQuery("body").css("font-family", normal + "," + jQuery("body").css("font-family").replace(/^[^,]+, */, ''));
-    }
-    jQuery("body *").each(function() {
-        if (!jQuery(this).css('font-family').includes(normal)) {
-            jQuery(this).css("font-family", normal + "," + jQuery(this).css("font-family"));
-        } else {
-            jQuery(this).css("font-family", normal + "," + jQuery(this).css("font-family").replace(/^[^,]+, */, ''));
-        }
-    });
-    return false;
     var IE_version = trp_get_IE_version();
     if ( IE_version != 0 && IE_version <= 11 ){
         return false;
